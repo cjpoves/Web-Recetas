@@ -1,0 +1,151 @@
+:root {
+        --fuentePrincipal: "Roboto", serif;
+}
+
+body {
+    margin: 0;
+  height: 100%;
+}
+.barra__navegacion{
+    background-color: rgb(50, 79, 227);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    gap: 20px;
+    box-shadow: 5px 5px 10px gray;
+}
+.navegacion__enlace {
+text-decoration: none;
+color: white;
+font-family: var(--fuentePrincipal);
+font-size: 18px;
+}
+
+.textoInicio{
+    text-align: center;
+    margin-top: 40px;
+    font-family: var(--fuentePrincipal);
+}
+
+.categorias__select{
+    background-color: rgb(245, 245, 245);
+    margin: auto;
+    border: thin solid;
+    border-radius: 10px;
+    max-width: 40%;
+    height: 170px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fuentePrincipal);
+}
+
+.form__select {
+    width: 100px;
+}
+
+.recetas{
+    margin-top: 40px;
+}
+
+.recetas__resultado{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media  (max-width: 800px) {
+    .recetas__resultado{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+  }
+
+
+.imagenesReceta{
+    width: 70%;
+    text-align: center;
+}
+
+.receta__btn{
+    background-color: rgb(50, 79, 227);
+    border: none;
+    color: white;
+    font-family: var(--fuentePrincipal);
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 70%;
+}
+
+
+.verRecetas__resultado--Hidden{
+    display: none;
+}
+
+.verRecetas__resultado{
+    background-color: grey;
+    height: 800px;
+    width: 800px;
+}
+
+.verRecetaContenedor {
+    width: 30%;
+    position: fixed;
+    bottom: 20px;
+    right: 35%;
+    overflow: auto;
+    max-width: 90vw;      
+    max-height: 90vh;
+}
+
+@media  (max-width: 800px) {
+    .verRecetaContenedor {
+        width: 80%;
+        position: fixed;
+        bottom: 20px;
+        right: 8%;
+    }
+  }
+
+.verRecetaContenedor img {
+    width: 60%;
+}
+
+.verRecetaContenedor p {
+    font-family: var(--fuentePrincipal);
+    font-size: 15px;
+    background-color: rgb(50, 79, 227);
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+@media  (max-width: 400px) {
+    .verRecetaContenedor p {
+        font-family: var(--fuentePrincipal);
+        font-size: 13px;
+        background-color: rgb(50, 79, 227);
+        padding: 5px;
+        border-radius: 10px;
+        color: white;
+    }
+  }
+
+.verRecetaContenedor button{
+    background-color: rgb(50, 79, 227);
+    border: none;
+    color: white;
+    font-family: var(--fuentePrincipal);
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 70%;
+}
+
+.opacidad {
+    filter: blur(5px);
+}
