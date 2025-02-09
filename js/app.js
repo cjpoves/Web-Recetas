@@ -57,7 +57,7 @@ function iniciarApp () {
 
             const recetaImagen = document.createElement("img");
             recetaImagen.classList.add("imagenesReceta");
-            recetaImagen.alt = `Imagen de la receta ${strMeal}`;
+            recetaImagen.alt = `Recipe image ${strMeal}`;
             recetaImagen.src = strMealThumb;
 
             const recetaHeading = document.createElement("H3");
@@ -66,7 +66,7 @@ function iniciarApp () {
 
             const recetaButton = document.createElement ("Button");
             recetaButton.classList.add("receta__btn");
-            recetaButton.textContent = "Ver Receta";
+            recetaButton.textContent = "View Recipe";
             //Cada vez que presionamos boton de ver receta hacemos referencia a funcion que nos trae detalles de esta
             recetaButton.onclick = function() {
                 div.classList.remove("verRecetas__resultado--Hidden");
@@ -105,7 +105,7 @@ function iniciarApp () {
 
         const verRecetaImagen = document.createElement("img");
             verRecetaImagen.classList.add("verImagenesReceta");
-            verRecetaImagen.alt = `Imagen de la receta ${strMeal}`;
+            verRecetaImagen.alt = `Recipe Image ${strMeal}`;
             verRecetaImagen.src = strMealThumb;
 
         const verRecetaDescripcion = document.createElement("p");
@@ -114,7 +114,7 @@ function iniciarApp () {
 
         const verRecetaButton = document.createElement ("Button");
             verRecetaButton.classList.add("verReceta__btn");
-            verRecetaButton.textContent = "Cerrar";
+            verRecetaButton.textContent = "Close";
 
            
             verRecetaButton.onclick = function() {
