@@ -2,6 +2,9 @@
         --fuentePrincipal: "Roboto", serif;
 }
 
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
   height: 100%;
@@ -95,8 +98,9 @@ font-size: 18px;
 .verRecetaContenedor {
     width: 30%;
     position: fixed;
-    bottom: 20px;
-    right: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     overflow: auto;
     max-width: 90vw;      
     max-height: 90vh;
@@ -106,13 +110,35 @@ font-size: 18px;
     .verRecetaContenedor {
         width: 80%;
         position: fixed;
-        bottom: 20px;
-        right: 8%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: auto;
+        
     }
+    .verRecetaContenedor img {
+        max-width: 100%;
+        height: auto;
+    }
+    
   }
 
+  @media  (max-width: 500px) {
+    .verRecetaContenedor {
+        width: 30%;
+        position: fixed;
+        top: 25%;
+       left: 23%;
+        overflow: auto;
+        
+    }    
+}
+
+
+
 .verRecetaContenedor img {
-    width: 60%;
+    max-width: 100%;
+        height: auto;
 }
 
 .verRecetaContenedor p {
@@ -124,16 +150,7 @@ font-size: 18px;
     color: white;
 }
 
-@media  (max-width: 400px) {
-    .verRecetaContenedor p {
-        font-family: var(--fuentePrincipal);
-        font-size: 13px;
-        background-color: rgb(50, 79, 227);
-        padding: 5px;
-        border-radius: 10px;
-        color: white;
-    }
-  }
+
 
 .verRecetaContenedor button{
     background-color: rgb(50, 79, 227);
@@ -149,3 +166,91 @@ font-size: 18px;
 .opacidad {
     filter: blur(5px);
 }
+
+
+/*Estilos página crear Receta*/
+
+.formTareas__Area{
+    background-color: rgb(245, 245, 245);
+    margin: auto;
+    border: thin solid;
+    border-radius: 10px;
+    max-width: 60%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fuentePrincipal);
+}
+
+.btnCrearTarea{
+    background-color: rgb(50, 79, 227);
+    border: none;
+    color: white;
+    font-family: var(--fuentePrincipal);
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.tituloTarea, .descripcionTarea {
+    width: 40%;
+    margin: auto;
+ }
+ .descripcionTarea{
+     width: 60%;
+     height: 100%;
+     margin-bottom: 10px;
+ }
+ .textoName {
+     text-align: center;
+ }
+ 
+ .textoAlerta {
+     background-color: rgb(235, 52, 52);
+     color: white;
+     font-family: var(--fuentePrincipal);
+     padding: 15px;
+     text-align: center;
+     border-radius: 10px;
+     width: 70%;
+     margin: auto;
+     margin-top: 20px;
+ }
+ 
+ .tareas{
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+     gap: 20px;
+     padding: 20px;
+ }
+ 
+ .contenedorTareas{
+     background-color: #C5E7E8;
+     border-radius: 10px;
+     padding: 10px;
+ }
+ 
+ .tituloTareaMostrar{
+ text-align: center;
+ }
+ .descripcionTareaMostrar{
+     word-wrap: break-word;
+     overflow-wrap: break-word;
+ }
+ 
+ 
+ .btnEliminarTarea{
+     background-color: rgb(235, 52, 52);
+     border: none;
+     color: white;
+     font-family: var(--fuentePrincipal);
+     padding: 10px;
+     border-radius: 10px;
+     cursor: pointer;
+     width: 100%;
+     margin-bottom: 10px;
+ }
