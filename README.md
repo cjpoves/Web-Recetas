@@ -6,7 +6,7 @@ Una página web interactiva construida con **JavaScript** que consulta una **API
 
 Este proyecto es una aplicación web donde puedes:
 
-- **Consultar recetas**: Busca recetas por categorías y visualiza los ingredientes y pasos de preparación.
+- **Consultar recetas**: Busca recetas por categorías y visualizar los detalles de estas.
 - **Crear recetas**: Añade tus propias recetas con nombre y descripción, y guárdalas para consultarlas más tarde.
 - **Eliminar recetas**: Si ya no necesitas alguna receta guardada, puedes eliminarla fácilmente.
 
