@@ -22,8 +22,3 @@ Este proyecto es una aplicación web donde puedes:
 - **JavaScript**: Lenguaje principal para la lógica del proyecto.
 - **API externa**: Para consultar las recetas y sus detalles.
 - **HTML / CSS**: Para estructurar y dar estilo a la página web.
-Este es el formato adecuado para que se vea como lo has pedido. He añadido iconos usando emoji para darle un toque visual que es común en los README de GitHub.
-
-Negrita para resaltar las palabras clave como "JavaScript" y "API de recetas".
-Sección con encabezados (#, ##) para organizar las partes.
-Listas para mostrar las funcionalidades y tecnologías.
